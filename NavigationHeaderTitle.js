@@ -29,6 +29,7 @@
 
 const React = require('react');
 const ReactNative = require('react-native');
+var PropTypes = require('prop-types');
 
 const {
   Platform,
@@ -69,9 +70,9 @@ const styles = StyleSheet.create({
 });
 
 NavigationHeaderTitle.propTypes = {
-  children: React.PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
   style: ViewPropTypes.style,
-  textStyle: Text.propTypes.style
+  textStyle: propTypes.style
 };
 
 module.exports = NavigationHeaderTitle;
